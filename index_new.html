@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パンツリー・ボバーブン家の家系</title>
+    <style>
+        body { font-family: "Noto Serif JP", serif; background:#f7f3ee; color:#333; margin:0; padding:0; }
+        header { background:#8b6d5c; color:#fff; padding:20px; text-align:center; }
+        nav { background:#d4c1b0; padding:10px; text-align:center; }
+        nav button { 
+            margin:5px; 
+            padding:12px 18px; 
+            cursor:pointer; 
+            border:none; 
+            background:#fff; 
+            font-weight:bold; 
+            font-size:17px; 
+            border-radius:6px;
+        }
+        nav button:hover { background:#e0d4c2; }
+        main { padding:20px; max-width:800px; margin:0 auto; }
+        footer { text-align:center; padding:15px; background:#8b6d5c; color:#fff; position:fixed; width:100%; bottom:0; }
+        .section { display:none; }
+        .section.active { display:block; }
+    </style>
+</head>
+<body>
+<header><h1>パンツリー・ボバーブン家の家系</h1></header>
+<nav>
+<button onclick="showSection('home')">トップ</button>
+<button onclick="showSection('bobabun1')">一世</button>
+<button onclick="showSection('bobabun2')">二世</button>
+<button onclick="showSection('bobabun3')">三世</button>
+<button onclick="showSection('chinholy')">チンホリー</button>
+<button onclick="showSection('bobabun4')">四世</button>
+<button onclick="showSection('history')">歴史</button>
+</nav>
+<main>
+
+<!-- トップ -->
+<div id="home" class="section active">
+<h2>家系の紹介</h2>
+<p>パンツリー・ボバーブン家は、イギリス上流階級に生まれた名門家系です。初代から四代に渡る歴史には、勇敢な兵士、政治的事件、そして家族の絆が刻まれています。</p>
+</div>
+
+<!-- 一世 -->
+<div id="bobabun1" class="section">
+<h2>パンツリー・ボバーブン一世</h2>
+<p>
+グレートブリテン及び北アイルランド連合王国の上流階級に生まれる。<br><br>
+青年期は利口で、ピアノのコンクールで賞をとった。<br>
+その後グレートブリテン及び北アイルランド連合王国の軍人養成学校に進学。<br>
+学校内では高い成績を修め、その後、グレートブリテン及び北アイルランド連合王国陸軍に所属する。<br><br>
+実戦で度重なる功をおさめ、32歳の頃には少将の地位まで上り詰めた。<br>
+その後、第二次世界大戦がナチスドイツとポーランド間で勃発し、国も戦争へ突入する。<br><br>
+戦況の悪化を前にして、パンツリー・ボバーブン一世は自ら最前線に赴き、兵を鼓舞するという決断を下す。<br>
+しかしナチスドイツの強い兵力を前に、あっけなく戦死してしまう。<br><br>
+最後に遺した言葉は、<br><br>
+<strong>
+「俺が死んでも気にするな。大切なのは、お前らが死なずに帰ってくることだ。<br>
+だから、何があっても絶対死なずに帰ってこい。信じてるぞ。」
+</strong>
+</p>
+</div>
+
+<!-- 二世 -->
+<div id="bobabun2" class="section">
+<h2>パンツリー・ボバーブン二世</h2>
+<p>
+グレートブリテン及び北アイルランド連合王国からナチスを討つために送られた使者。<br>
+軍でも強さが認められ前線に向かうが、激戦の末に死亡。<br>
+未来を息子の三世、そしてチンホリーに託す。
+</p>
+</div>
+
+<!-- 三世 -->
+<div id="bobabun3" class="section">
+<h2>パンツリー・ボバーブン三世</h2>
+<p>
+二世の長男。とても怠け者。<br>
+本来は二世の跡継ぎとなる予定だったが、その怠け癖のせいで弟のチンホリーが跡継ぎとなる。
+</p>
+</div>
+
+<!-- チンホリー -->
+<div id="chinholy" class="section">
+<h2>チンホリー・ボバーブン</h2>
+<p>
+二世の次男で、とても元気。<br>
+兄である三世の怠けぶりを見て「自分が父の跡を継ぐ！」と決意する。<br>
+努力により才能を開花させ、やがて二世をも超える実力を持つに至る。<br>
+最終的には二世が倒せなかったナチスを討ち倒し、英雄となる。
+</p>
+</div>
+
+<!-- 四世 -->
+<div id="bobabun4" class="section">
+<h2>パンツリー・ボバーブン四世</h2>
+<p>
+三世の息子で、ナチスに加担するが最終的に処刑される。家族の中でも異色の存在。
+</p>
+</div>
+
+<!-- 歴史 -->
+<div id="history" class="section">
+<h2>ボバーブン家の歴史</h2>
+<ol>
+<li>一世：軍の頂点に立つが最前線で戦死。</li>
+<li>二世：ナチスと戦い、子らに未来を託す。</li>
+<li>三世：怠け者で跡継ぎの座を失う。</li>
+<li>チンホリー：努力の末、英雄となる。</li>
+<li>四世：家系で唯一の裏切り者として処刑される。</li>
+</ol>
+</div>
+
+</main>
+
+<footer>&copy; 2025 パンツリー・ボバーブン家</footer>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
