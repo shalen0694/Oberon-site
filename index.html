@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パンツリー・ボバーブン家の家系</title>
+    <style>
+        body { font-family: "Noto Serif JP", serif; background:#f7f3ee; color:#333; margin:0; padding:0; }
+        header { background:#8b6d5c; color:#fff; padding:20px; text-align:center; }
+        nav { background:#d4c1b0; padding:10px; text-align:center; }
+        nav button { margin:0 5px; padding:5px 10px; cursor:pointer; border:none; background:#fff; font-weight:bold; }
+        nav button:hover { background:#e0d4c2; }
+        main { padding:20px; max-width:800px; margin:0 auto; }
+        footer { text-align:center; padding:15px; background:#8b6d5c; color:#fff; position:fixed; width:100%; bottom:0; }
+        .section { display:none; }
+        .section.active { display:block; }
+    </style>
+</head>
+<body>
+<header><h1>パンツリー・ボバーブン家の家系</h1></header>
+<nav>
+<button onclick="showSection('home')">トップ</button>
+<button onclick="showSection('bobabun1')">一世</button>
+<button onclick="showSection('bobabun2')">二世</button>
+<button onclick="showSection('bobabun3')">三世</button>
+<button onclick="showSection('chinholy')">チンホリー</button>
+<button onclick="showSection('bobabun4')">四世</button>
+<button onclick="showSection('history')">歴史</button>
+</nav>
+<main>
+<div id="home" class="section active">
+<h2>家系の紹介</h2>
+<p>パンツリー・ボバーブン家は、イギリス上流階級に生まれた名門家系です。初代から四代に渡る歴史には、勇敢な兵士、政治的事件、そして家族の絆が刻まれています。</p>
+</div>
+<div id="bobabun1" class="section">
+<h2>パンツリー・ボバーブン一世</h2>
+<p>青年期にピアノの賞を受賞。軍事アカデミーを卒業し、32歳で少将に昇進。第二次世界大戦に従軍し、前線で戦死。</p>
+</div>
+<div id="bobabun2" class="section">
+<h2>パンツリー・ボバーブン二世</h2>
+<p>初代の子。勤勉で知性豊か。家業を受け継ぎ、家族の安定に尽力。</p>
+</div>
+<div id="bobabun3" class="section">
+<h2>パンツリー・ボバーブン三世</h2>
+<p>怠惰で自由奔放な性格。家業にはあまり関心を示さず、父の二世とは対照的。</p>
+</div>
+<div id="chinholy" class="section">
+<h2>チンホリー・ボバーブン</h2>
+<p>二世の子で家族の中で最も勤勉。ナチスを打ち破る功績を持つ。</p>
+</div>
+<div id="bobabun4" class="section">
+<h2>パンツリー・ボバーブン四世</h2>
+<p>三世の息子で、ナチスに加担するが最終的に処刑される。家族の中でも異色の存在。</p>
+</div>
+<div id="history" class="section">
+<h2>ボバーブン家の歴史</h2>
+<ol>
+<li>初代：勇敢に戦場で戦い、二世に家業を託す。</li>
+<li>二世：家族をまとめ、家業と財産を守る。</li>
+<li>三世：自由奔放で家業には無関心。</li>
+<li>チンホリー：勤勉で家族の信頼が厚く、ナチスに勝利する。</li>
+<li>四世：三世の息子でナチスに加担するも処刑。</li>
+</ol>
+</div>
+</main>
+<footer>&copy; 2025 パンツリー・ボバーブン家</footer>
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
