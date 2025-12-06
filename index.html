@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>パンツリー・ボバーブン家の家系</title>
+    <style>
+        body { 
+            font-family: "Noto Serif JP", serif;
+            background:#faf7f3;
+            color:#222;
+            margin:0;
+            padding:0;
+            font-size:22px; 
+            line-height:1.9; 
+        }
+
+        header {
+            background:#6b4e40;
+            color:#fff;
+            padding:32px;
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        nav {
+            background:#c8b19e;
+            padding:18px;
+            text-align:center;
+            position:sticky;
+            top:0;
+            z-index:100;
+        }
+
+        /* 押しやすい大型ボタン */
+        nav button {
+            margin:10px;
+            padding:18px 28px;
+            cursor:pointer;
+            border:none;
+            background:#fff;
+            font-weight:bold;
+            font-size:22px;
+            border-radius:10px;
+            box-shadow:0 2px 4px rgba(0,0,0,0.25);
+        }
+        nav button:hover { background:#efe6d9; }
+        nav button:active { background:#e3d8c7; }
+
+        main {
+            padding:32px;
+            max-width:900px;
+            margin:0 auto;
+        }
+
+        main h2 {
+            font-size:30px;
+            margin-bottom:18px;
+            border-left:8px solid #6b4e40;
+            padding-left:12px;
+        }
+
+        footer {
+            text-align:center;
+            padding:22px;
+            background:#6b4e40;
+            color:#fff;
+            font-size:18px;
+            margin-top:40px;
+        }
+
+        .section { display:none; }
+        .section.active { display:block; }
+
+    </style>
+</head>
+<body>
+
+<header>パンツリー・ボバーブン家の家系</header>
+
+<nav>
+<button onclick="showSection('home')">トップ</button>
+<button onclick="showSection('bobabun1')">一世</button>
+<button onclick="showSection('bobabun2')">二世</button>
+<button onclick="showSection('bobabun3')">三世</button>
+<button onclick="showSection('chinholy')">チンホリー</button>
+<button onclick="showSection('bobabun4')">四世</button>
+<button onclick="showSection('history')">歴史</button>
+</nav>
+
+<main>
+
+<div id="home" class="section active">
+<h2>家系の紹介</h2>
+<p>パンツリー・ボバーブン家は、イギリス上流階級から始まった名門家系であり、その歴史は戦いと勇気の物語である。初代から四代まで、それぞれに深いドラマが刻まれている。</p>
+</div>
+
+<div id="bobabun1" class="section">
+<h2>パンツリー・ボバーブン一世</h2>
+<p>
+1789年生まれ、グレートブリテン及び北アイルランド連合王国の上流階級に生まれ、青年期にはピアノのコンクールで賞を獲得。  
+その後軍人養成学校に進学し、高成績を修めて陸軍へ。  
+32歳で少将へと昇進。  
+<br><br>
+第二次世界大戦勃発後、自ら最前線に赴く決断をしたが、強力なナチス兵力の前に戦死。  
+<br><br>
+<strong>遺した言葉：</strong><br>
+「俺が死んでも気にするな。大切なのは、お前らが死なずに帰ってくることだ。  
+だから、何があっても絶対死なずに帰ってこい。信じてるぞ。」
+</p>
+</div>
+
+<div id="bobabun2" class="section">
+<h2>パンツリー・ボバーブン二世</h2>
+<p>
+1821年生まれ、ナチスを討つためにグレートブリテン及び北アイルランド連合王国から送られた使者。  
+父と似てとても勇敢で、敵の拠点に突撃しては、拠点を制圧してしまうほど。
+その勇敢な性格は息子のチンホリーにも受け継がれる。
+軍でも強さが認められ前線へ向かうが戦死。  
+その未来は、息子である三世とチンホリーへ託された。
+</p>
+</div>
+
+<div id="bobabun3" class="section">
+<h2>パンツリー・ボバーブン三世</h2>
+<p>
+1841年生まれ、二世の長男。本来は後継者になる予定だったが、とても怠け者であったため、跡継ぎは弟チンホリーへ移ることとなった。
+父の二世や弟チンホリーが戦っている間、家でポテチを食べていたらしい。
+その性格は四世にも受け継がれることとなる。
+</p>
+</div>
+
+<div id="chinholy" class="section">
+<h2>チンホリー・ボバーブン</h2>
+<p>
+1845年生まれ、二世の次男。兄の怠けぶりを見て「自分が跡を継ぐ」と決意。  
+特訓の末に類まれな才能を開花させ、父を超えるほどの実力を持つようになる。  
+ついに、父が倒せなかったナチスを討ち倒す英雄となる。
+</p>
+</div>
+
+<div id="bobabun4" class="section">
+<h2>パンツリー・ボバーブン四世</h2>
+<p>
+1869年生まれ、三世の息子。イギリス軍に所属していたものの、戦いの途中ナチス軍に追い詰められ、
+死にたくなかった四世はナチスに付くから見逃して欲しい、と懇願しナチス側に付く
+1902年、裏切り者として処刑される異端の存在。
+</p>
+</div>
+
+<div id="history" class="section">
+<h2>ボバーブン家の戦記</h2>
+<ol>
+<li>一世：軍の頂点に立つも1836年ナチス軍との戦いで戦死。</li>
+<li>二世：1853年、32歳の頃ナチス軍との最終決戦、必死に戦うもで敗北し、死亡。未来を息子の3世とチンホリーに託す。</li>
+<li>三世：怠け癖により跡継ぎの権利を失い、弟のチンホリーが実権を握る。1904年食べ過ぎの肥満により死亡</li>
+<li>チンホリー：努力で軍トップ上り詰め、父の仇、ナチスに勝利し、ナチスを滅ぼす。1845年家族に囲まれ最期を迎える。</li>
+<li>四世：イギリスを裏切り、ナチス側に付いた裏切り者。1902年、家系唯一の裏切り者として処刑される。</li>
+</ol>
+</div>
+
+</main>
+
+<footer>&copy; 2025 パンツリー・ボバーブン家</footer>
+
+<script>
+function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
